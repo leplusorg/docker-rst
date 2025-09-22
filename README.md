@@ -17,13 +17,13 @@ Let's say that you want to convert an reStructuredText file intput.rst in your c
 **Mac/Linux**
 
 ```bash
-cat intput.rst | docker run --rm -i --net=none leplusorg/rst pandoc -f markdown -t html - > output.html
+cat intput.rst | docker run --rm -i --net=none leplusorg/rst pandoc -f rst -t html - > output.html
 ```
 
 **Windows**
 
 ```batch
-type intput.rst | docker run --rm -i --net=none leplusorg/rst pandoc -f markdown -t html - > output.html
+type intput.rst | docker run --rm -i --net=none leplusorg/rst pandoc -f rst -t html - > output.html
 ```
 
 ## Example using the filesystem
@@ -33,7 +33,7 @@ Same thing, assuming that you want to convert an reStructuredText file intput.rs
 **Mac/Linux**
 
 ```bash
-docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplusorg/rst pandoc -f markdown -t html -o output.html intput.rst
+docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplusorg/rst pandoc -f rst -t html -o output.html intput.rst
 ```
 
 **Windows**
@@ -41,13 +41,13 @@ docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplus
 In `cmd`:
 
 ```batch
-docker run --rm -t --net=none -v "%cd%:/tmp" leplusorg/rst pandoc -f markdown -t html -o output.html intput.rst
+docker run --rm -t --net=none -v "%cd%:/tmp" leplusorg/rst pandoc -f rst -t html -o output.html intput.rst
 ```
 
 In PowerShell:
 
 ```pwsh
-docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/rst pandoc -f markdown -t html -o output.html intput.rst
+docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/rst pandoc -f rst -t html -o output.html intput.rst
 ```
 
 ## Software Bill of Materials (SBOM)
