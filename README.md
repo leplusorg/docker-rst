@@ -7,7 +7,7 @@ Multi-platform Docker container with utilities to process reStructuredText files
 [![Docker Stars](https://img.shields.io/docker/stars/leplusorg/rst)](https://hub.docker.com/r/leplusorg/rst)
 [![Docker Pulls](https://img.shields.io/docker/pulls/leplusorg/rst)](https://hub.docker.com/r/leplusorg/rst)
 [![Docker Version](https://img.shields.io/docker/v/leplusorg/rst?sort=semver)](https://hub.docker.com/r/leplusorg/rst)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/10081/badge)](https://bestpractices.coreinfrastructure.org/projects/10081)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/10081/badge)](https://bestpractices.coreinfrastructure.org/projects/11221)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/leplusorg/docker-rst/badge)](https://securityscorecards.dev/viewer/?uri=github.com/leplusorg/docker-rst)
 
 ## Example without using the filesystem
