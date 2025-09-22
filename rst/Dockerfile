@@ -16,10 +16,19 @@ RUN apk upgrade --no-cache \
     coreutils=9.7-r1 \
     curl=8.14.1-r1 \
     git=2.49.1-r0 \
+    pandoc-cli=3.6.4-r0 \
+    pipx=1.7.1-r0 \
+    py3-docutils=0.21.2-r0 \
     py3-pip=25.1.1-r0 \
     python3=3.12.11-r0 \
     && apk cache --no-cache clean \
     && rm -rf /var/cache/apk/*
+
+RUN pipx ensurepath --global \
+    && pipx install --global \
+    docutils==0.22.2 \
+    rstcheck==6.2.5 \
+    rst2pdf==0.103.1
 
 RUN adduser \
   --home "${USER_HOME}" \
