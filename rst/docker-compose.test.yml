@@ -13,7 +13,11 @@ services:
         fi
         base64 --version # coreutils
         curl --version # curl
+        docutils --version # docutils
         git --version # git
+        pandoc --version # pandoc
         pip --version # py3-pip
         python --version # python3
+        rst2pdf --version # rst2pdf
+        rstcheck --version # rstcheck
       '
