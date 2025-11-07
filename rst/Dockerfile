@@ -26,7 +26,7 @@ RUN apk upgrade --no-cache \
 
 RUN pipx ensurepath --global \
     && pipx install --global \
-    docutils==0.22.2 \
+    docutils==0.22.3 \
     rstcheck==6.2.5 \
     rst2pdf==0.103.1
 
