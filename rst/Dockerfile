@@ -24,11 +24,11 @@ RUN apk upgrade --no-cache \
     && apk cache --no-cache clean \
     && rm -rf /var/cache/apk/*
 
+COPY requirements.txt /tmp/requirements.txt
+
 RUN pipx ensurepath --global \
-    && pipx install --global \
-    docutils==0.22.3 \
-    rstcheck==6.2.5 \
-    rst2pdf==0.103.1
+    && xargs -a /tmp/requirements.txt -n 1 pipx install --global \
+    && rm -f /tmp/requirements.txt
 
 RUN adduser \
   --home "${USER_HOME}" \
