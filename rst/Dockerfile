@@ -17,7 +17,7 @@ RUN apk upgrade --no-cache \
     curl=8.17.0-r1 \
     git=2.52.0-r0 \
     pandoc-cli=3.8.2.1-r0 \
-    pipx=1.7.1-r0 \
+    pipx=1.8.0-r0 \
     py3-docutils=0.21.2-r1 \
     py3-pip=25.1.1-r1 \
     python3=3.12.12-r0 \
