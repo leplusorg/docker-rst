@@ -1,3 +1,3 @@
-docutils==0.22.4
+docutils==0.23
 rstcheck==6.2.5
 rst2pdf==0.105
