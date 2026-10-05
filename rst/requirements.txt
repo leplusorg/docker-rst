@@ -1,3 +1,9 @@
 docutils==0.23
 rstcheck==6.3.0
 rst2pdf==0.105
+# FIXME(2027-01-04): pillow is not an app but a dependency of rst2pdf (through
+# reportlab). It is pinned here only so that osv-scanner, which resolves the
+# dependencies of this file, scans the version actually installed instead of
+# an old vulnerable one (9.5.0). Lines marked "constraint" are only used as pip
+# constraints by the Dockerfile. Remove once osv-scanner resolves it correctly.
+pillow==12.3.0 # constraint
