@@ -7,4 +7,4 @@ rst2pdf==0.105
 # version actually installed instead of an old vulnerable one (9.5.0).
 # Lines marked "constraint" are only used as pip  constraints by the
 # Dockerfile. Remove once osv-scanner resolves it correctly.
-pillow==12.3.0 # constraint
+pillow==13.0.0 # constraint
