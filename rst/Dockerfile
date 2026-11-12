@@ -15,7 +15,7 @@ RUN apk upgrade --no-cache \
     && apk add --no-cache \
     coreutils=9.11-r0 \
     curl=8.23.0-r0 \
-    git=2.54.0-r0 \
+    git=2.54.1-r0 \
     pandoc-cli=3.10-r0 \
     pipx=1.14.0-r0 \
     py3-docutils=0.21.2-r2 \
