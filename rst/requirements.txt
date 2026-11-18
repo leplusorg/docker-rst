@@ -1,5 +1,5 @@
 docutils==0.23
-rstcheck==6.3.0
+rstcheck==6.3.1
 rst2pdf==0.105
 # FIXME: revisit on 2027-01-04. pillow is not an app but a dependency
 # of rst2pdf (through reportlab). It is pinned here only so that
